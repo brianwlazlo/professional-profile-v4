@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* -------  General Styles ------- */
+
+body {
+  margin: 0;
+}
+
+header {
+	margin-bottom: 40px;
+	background-color: lightslategray
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+  color: white;
+  text-align: center;
+  margin: 0 5px 10px 5px;
+  padding: 15px 0 0 0;
+}
+
+header h2 {
+	font-family: 'Montserrat', serif;
+	color: white;
+	margin: 0px;
+	font-size: 22px;
+	text-align: center;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header nav {
+  display: flex; 
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+  font-family: Montserrat;
+  text-decoration: none;
+  margin: 0 5px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+main {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+section {
+	padding: 10px;
+  margin: 10px;
+}
+
+main article {
+  margin: 15px 0;
+}
+
+article {
+  background-image: url(pics/6x4-interests-collage-no-white-edge.jpg);
+  background-size: auto;
+}
+
+article p, article h2 {
+   background-color: rgba(255, 255, 255, 0.70);
+   padding: 15px;
+   margin: 10px 5% 15px 5%;
+}
+
+footer {
+	background-color: lightslategray;
+  padding-top: 5px;
+}
+
+
+/* -------  Type ------- */
+
+h1, h2, h3 {
+  font-family: 'Work Sans', sans-serif;
+	color: rgb(53, 51, 51);
+  text-align: left;
+  font-weight: 600;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+
+p, li {
+ font-family: 'Work Sans', sans-serif;
+ line-height: 1.5em;
+ font-size: 18px;
+ color: rgb(70, 68, 68);
+ padding-right: 15px
+}
+
+article p {
+  font-weight: 500;
+}
+
+footer p {
+	color: white;	
+	text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+
+
+
+/* -------  Modifier styles ------- */
+
+.group img {
+  width: 100%; 
+  padding-right: 25px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column; 
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+  
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+.border-top {
+  border-top: 2px solid black;
+  padding-top: 10px;
+}
+
+.profile-pic {
+  max-width: 80%;
+  margin: 5%;
+}
+
+.social-media-icons {
+  max-width: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+
+/* --------- Media Query ----------*/
+
+@media all and (min-width: 600px) {
+
+  section, article, h1 {
+    padding: 0 10%;
+    margin: 10px 5% 15px 5%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 6px;
+    font-size: 36px;
+  }
+
+  .logo {
+    font-size: 36px;
+    margin-top: 10px;
+    margin-left: 5%;
+  }
+
+  header nav {
+    margin-top: 14px;
+    margin-right: 5%;
+
+  }
+
+  header nav ul li a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+
+  }
+
+}
+
+/* Contact Form Design */
+
+form label {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
